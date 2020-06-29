@@ -43,8 +43,6 @@ import java.util.ArrayList;
  * 5) If a file found then it invokes the file with arguments,
  *	  If not shows an error message
  */
-
-//javac --module-path "%JAVA_FX%" --add-modules javafx.fxml,javafx.controls package/Main.java
 public class ConsoleController {
 
 	@FXML private TabPane tabbedPane; // Vairable name must be same as fx:id
