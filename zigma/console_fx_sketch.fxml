@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="cmdField" layoutX="42.0" layoutY="361.0" prefHeight="25.0" prefWidth="544.0" promptText="Command goes here" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="14.0">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="caretChar" alignment="CENTER_RIGHT" layoutX="14.0" layoutY="361.0" prefHeight="23.0" prefWidth="25.0" text="\$" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="14.0">
+         <font>
+            <Font name="Monospaced Bold" size="18.0" />
+         </font>
+      </Label>
+      <TabPane fx:id="tabbedPane" prefHeight="355.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab fx:id="startupTab" text="Console">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="txtArea" blendMode="MULTIPLY" layoutX="14.0" layoutY="14.0" prefHeight="301.0" prefWidth="572.0" promptText="Copyright (c) 2020 ZiGMA Residence" wrapText="true" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+                           <font>
+                              <Font name="Consolas" size="14.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
